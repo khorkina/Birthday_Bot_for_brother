@@ -7,7 +7,6 @@ public class Main {
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
             botsApi.registerBot(new QuestBot()); // Запуск твоего квестового бота
-            System.out.println("Bot started successfully!");
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
